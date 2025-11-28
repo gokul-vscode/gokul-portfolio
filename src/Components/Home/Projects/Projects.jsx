@@ -76,7 +76,7 @@ const Projects = () => {
 
 
   return (
-    <motion.section className="projects-section" id="projects"  initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.6, ease: easeOut }} viewport={{ once: true, amount: 0.5 }}>
+    <motion.section className="projects-section" id="projects"  initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.6, ease: easeOut }} viewport={{ once: true, amount: 0.1 }}>
       <h2 className="projects-title">Mini Projects</h2>
 
       <div className="filter-buttons">

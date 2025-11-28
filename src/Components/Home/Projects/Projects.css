@@ -226,3 +226,14 @@
     gap: 8px;
   }
 }
+.projects-section {
+  display: block;
+  width: 100%;
+  min-height: auto; /* no fixed height blocking content */
+  overflow: visible;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
