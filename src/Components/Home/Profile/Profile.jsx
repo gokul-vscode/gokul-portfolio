@@ -12,7 +12,7 @@ import cv from '../../../Assets/Gokulram-CV.pdf'
 const Profile = () => {
   return (
 <>
-<motion.div class="hero-section"  initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.6, ease: easeOut }} viewport={{ once: true, amount: 0.5 }}>
+<motion.div class="hero-section"  initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.9, ease: easeOut ,type: "spring",stiffness: 120}} viewport={{ once: true, amount: 0.5 }}>
   <div class="left-box">
     <h3>Hi,I'm <span className='gokul'>GOKUL</span></h3>
     <h4>Creative   &lt;/&gt;  -
@@ -39,7 +39,7 @@ const Profile = () => {
   </div>
 
   <div class="right-box">
-    <img src={Profile1} alt="" className='profile-pic'/>
+    <motion.img src={Profile1} alt="" className='profile-pic'  initial={{ x: 150, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}  transition={{ duration: 1, ease: "easeOut" }} viewport={{ once: true }} />
   </div>
 </motion.div>
 </>
