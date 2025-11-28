@@ -1,0 +1,359 @@
+.contact-section-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+  position: relative;
+
+  /* Background Image */
+  /* background: url("../assets/bg-code.jpg") center/cover no-repeat; */
+}
+.Contact{
+        margin-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+/* Big React Logo Faded Overlay */
+.contact-section-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: url("../assets/react-logo.png") center/contain no-repeat; */
+  opacity: 0.2;
+}
+
+/* Form Section */
+.form-container,
+.info-card {
+  width: 45%;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  color: #fff;
+}
+.form-containe h2{
+    margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  outline: none;
+}
+.input-field:focus{
+    border: 1px solid rgb(26, 195, 224);
+}
+.textarea-field {
+  resize: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: rgb(0, 226, 199);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Right Info Section */
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.detail{
+  text-decoration: none;
+  color: white;
+}
+.icon {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.label1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(0, 226, 199);
+}
+.social-links ul li a {
+  text-decoration: none;      /* removes underline */
+  color: #ffffff;             /* normal white text */
+  font-weight: 500;
+  transition: 0.3s ease;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Optional hover effect */
+.social-links ul li a:hover {
+  color: #00e2c7;             /* change to teal on hover */
+  text-shadow: 0 0 8px rgba(0, 226, 199, 0.8);
+}
+.social-links ul {
+  padding-left: 0;
+}
+
+.social-links li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgb(0, 226, 199);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+/* ===========================
+   📱 iPad Mini (768px - 992px)
+   =========================== */
+@media (max-width: 992px) and (min-width: 600px) {
+
+  .contact-section-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .form-container,
+  .info-card {
+    width: 85%;
+  }
+
+  .Contact {
+    font-size: 32px;
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 16px;
+  }
+}
+
+/* ===========================
+   📱 Mobile View (Below 600px)
+   =========================== */
+@media (max-width: 600px) {
+
+  .contact-section-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+    gap: 25px;
+  }
+
+  .form-container,
+  .info-card {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .Contact {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .submit-button {
+    padding: 12px 10px;
+    font-size: 15px;
+  }
+
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon {
+    margin-bottom: 5px;
+  }
+
+  .social-links ul {
+    text-align: center;
+  }
+
+  .social-links li {
+    justify-content: center;
+  }
+
+  /* Scroll Button Adjust */
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+}
+
+
+/* Basic Reset and Variables for easy color changes */
+:root {
+    --bg-color: #1a1a2e; /* Dark background */
+    --text-color: #ffffff;
+    --primary-color: #00bcd4; /* Teal/Cyan for buttons */
+    --border-color: #00bcd4;
+}
+
+:root {
+  --primary-color: #00bcd4;
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --border-color: rgba(255,255,255,0.3);
+}
+
+/* Hero Section */
+.hero-section1 {
+    width: 100%;
+    max-width: 900px;
+    margin: 120px auto 80px auto; /* Center + spacing top & bottom */
+    text-align: center;
+    padding: 30px;
+    color: var(--text-color);
+}
+
+/* Tagline Text */
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+/* Button Group */
+.action-buttons1 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Base Button Style */
+.btn {
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Filled Button */
+.btn-hire {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+.btn-hire:hover {
+    background-color: #0099a7;
+}
+
+/* Outline Button */
+.btn-download {
+    background-color: transparent;
+    color: var(--primary-color);
+    /* margin-left: 20px; */
+}
+
+.btn-download:hover {
+    background-color: rgba(0, 188, 212, 0.15);
+    color: var(--text-color);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 600px) {
+    .tagline {
+        font-size: 13px;
+    }
+
+    .action-buttons1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+/* =======================
+   📱 Mobile (0px — 600px)
+   ======================= */
+@media (max-width: 600px) {
+    .hero-section1 {
+        padding: 20px;
+        margin: 80px auto 60px auto;
+        max-width: 95%;
+    }
+
+    .tagline {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 28px;
+    }
+
+    .action-buttons1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
+
+/* ============================
+   📟 iPad Mini / Tablet (600px — 850px)
+   ============================ */
+@media (min-width: 600px) and (max-width: 850px) {
+    .hero-section1 {
+        max-width: 700px;
+        padding: 25px;
+        margin: 100px auto 70px auto;
+    }
+
+    .tagline {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        margin-bottom: 35px;
+    }
+
+    .action-buttons1 {
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 12px 26px;
+        font-size: 1.05rem;
+    }
+}
+
+

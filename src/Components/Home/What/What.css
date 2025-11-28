@@ -1,0 +1,198 @@
+/* =============== Global Reset =============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #101b28;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =============== Section =============== */
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 5%;
+  background: linear-gradient(180deg, #1a2a3a 0%, #101b28 100%);
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00bcd4;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* =============== Service Container =============== */
+.services-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* =============== Service Card =============== */
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.05);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 188, 212, 0.2);
+}
+
+/* Card Number */
+.card-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00bcd4;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+
+/* Card Content */
+.card-content {
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #b0c4de;
+  margin-top: 8px;
+  line-height: 1.6;
+  max-width: 95%;
+}
+
+/* Link Icon */
+.card-link {
+  color: #00bcd4;
+  margin-left: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #ffffff;
+  transform: rotate(20deg) scale(1.2);
+}
+
+/* =============== Responsive Design =============== */
+
+/* 🖥 Medium Devices (Laptops & Tablets Landscape) */
+@media (max-width: 1024px) {
+  .service-card {
+    padding: 20px 25px;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* 📱 iPad Mini (width ≤ 850px) */
+@media (max-width: 850px) {
+  .services-section {
+    padding: 50px 6%;
+  }
+
+  .card-number {
+    font-size: 1.8rem;
+    margin-right: 20px;
+  }
+
+  .service-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-content {
+    margin-top: 10px;
+  }
+
+  .card-link {
+    align-self: flex-end;
+    margin-top: 15px;
+  }
+}
+
+/* 📱 Mobile Devices (width ≤ 600px) */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .services-container {
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .card-number {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .card-link {
+    align-self: flex-end;
+  }
+}
+
+/* 📱 Small Mobile (width ≤ 400px) */
+@media (max-width: 400px) {
+  .services-section {
+    padding: 40px 4%;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+
+  .card-number {
+    font-size: 1.4rem;
+  }
+}

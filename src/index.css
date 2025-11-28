@@ -5,9 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgb(48, 49, 51); */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* 🔹 Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* 🔹 Body Styling */
+
+
+
+
+/* For full page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f1f; /* Dark background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00eaff, #0077ff);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00ffe1, #0095ff);
+}
+.scroll-box {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 8px;
 }
