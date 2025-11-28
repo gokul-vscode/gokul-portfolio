@@ -274,7 +274,9 @@
 .btn-hire:hover {
     background-color: #0099a7;
 }
-
+.btn-download{
+  text-decoration: none;
+}
 /* Outline Button */
 .btn-download {
     background-color: transparent;

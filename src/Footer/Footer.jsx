@@ -5,7 +5,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import emailjs from "@emailjs/browser";
 import { easeOut, motion } from "framer-motion";
-
+import cv from '../../src/Assets/Gokulram-CV.pdf'
+import certificate from '../../src/Assets/certificate.jpg'
 const Footer = () => {
   const form = useRef();
 
@@ -87,7 +88,8 @@ const Footer = () => {
 
         <div className="action-buttons1">
           <button className="btn btn-hire" onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Hire Me</button>
-          <button className="btn btn-download">Download Resume</button>
+          <a href={cv} download="Gokul-Resume" className="btn btn-download">Download Resume</a>
+          <a href={certificate} target='_blank' className="btn btn-download">Certificate</a>
         </div>
       </div>
     </>

@@ -4,6 +4,7 @@ import { FaHtml5,FaCss3Alt,FaJs,FaReact,FaGithub,FaDownload  } from "react-icons
 import { SiDjango } from "react-icons/si";
 import Profile1 from '../../../Assets/my3.jpg'
 import { easeOut, motion } from "framer-motion";
+import cv from '../../../Assets/Gokulram-CV.pdf'
 
 
 // import prbg from '../Assets/prbg.jpg'
@@ -32,7 +33,7 @@ const Profile = () => {
         <p className='icons'><FaGithub /><span  className='icon-nm'>GitHub</span></p>
         <p className='icons'><SiDjango /><span  className='icon-nm'>Django</span></p>
     </h1>
-     <a href="#download" download className="download-btn">
+     <a href={cv} download="Gokul-Resume" className="download-btn">
       Download CV <span className='dw-icon'>  <FaDownload /></span>
     </a>
   </div>
