@@ -89,7 +89,7 @@ const Footer = () => {
         <div className="action-buttons1">
           <button className="btn btn-hire" onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Hire Me</button>
           <a href={cv} download="Gokul-Resume" className="btn btn-download">Download Resume</a>
-          <a href={certificate} target='_blank' className="btn btn-download">Certificate</a>
+          <a href={certificate} target='_blank' rel="noopener noreferrer" className="btn btn-download">Certificate</a>
         </div>
       </div>
     </>
