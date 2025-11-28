@@ -44,7 +44,7 @@ const What = () => {
               <h3 className="card-title">{service.title}</h3>
               <p className="card-description">{service.description}</p>
             </div>
-            <a href="#" className="card-link">
+            <a href="#page" className="card-link">
               <FiExternalLink className="link-icon" />
             </a>
           </div>

@@ -69,9 +69,9 @@ const Footer = () => {
           <div className="social-links">
             <p className="label1">Social Links</p>
             <ul>
-              <li><FaGithub /> <a href="https://github.com/gokul-vscode?tab=repositories" target="_blank">GitHub</a></li>
-              <li><FaLinkedin /> <a href="https://www.linkedin.com/in/pgokulram" target="_blank">LinkedIn</a></li>
-              <li><FaWhatsapp /> <a href="https://wa.me/916379624525" target="_blank">WhatsApp</a></li>
+              <li><FaGithub /> <a href="https://github.com/gokul-vscode?tab=repositories" target="_blank" rel="noreferrer noopener">GitHub</a></li>
+              <li><FaLinkedin /> <a href="https://www.linkedin.com/in/pgokulram" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+              <li><FaWhatsapp /> <a href="https://wa.me/916379624525" target="_blank" rel="noreferrer noopener">WhatsApp</a></li>
             </ul>
           </div>
         </div>

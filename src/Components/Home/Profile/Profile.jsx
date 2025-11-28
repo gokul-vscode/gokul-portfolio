@@ -11,7 +11,7 @@ import { easeOut, motion } from "framer-motion";
 const Profile = () => {
   return (
 <>
-<div class="hero-section"  initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.6, ease: easeOut }} viewport={{ once: true, amount: 0.5 }}>
+<motion.div class="hero-section"  initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.6, ease: easeOut }} viewport={{ once: true, amount: 0.5 }}>
   <div class="left-box">
     <h3>Hi,I'm <span className='gokul'>GOKUL</span></h3>
     <h4>Creative   &lt;/&gt;  -
@@ -32,7 +32,7 @@ const Profile = () => {
         <p className='icons'><FaGithub /><span  className='icon-nm'>GitHub</span></p>
         <p className='icons'><SiDjango /><span  className='icon-nm'>Django</span></p>
     </h1>
-     <a href="" download className="download-btn">
+     <a href="#download" download className="download-btn">
       Download CV <span className='dw-icon'>  <FaDownload /></span>
     </a>
   </div>
@@ -40,7 +40,7 @@ const Profile = () => {
   <div class="right-box">
     <img src={Profile1} alt="" className='profile-pic'/>
   </div>
-</div>
+</motion.div>
 </>
   )
 }
