@@ -20,7 +20,8 @@ const Projects = () => {
       category: "Fullstack",
       image: fullstack,
       github:"https://github.com/gokul-vscode/frontend-fullstack",
-      demo: "https://frontend-fullstack.netlify.app/",
+      // demo: "https://frontend-fullstack.netlify.app/",
+      demo: "https://mejestic-sports-shop.netlify.app/"
     },
     {
       id: 2,
