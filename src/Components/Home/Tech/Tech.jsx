@@ -1,7 +1,10 @@
 import React from "react";
 import "./Tech.css";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact,FaPython,FaTools  } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
 import { SiDjango} from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import { easeOut, motion } from "framer-motion";
 
 
@@ -16,8 +19,10 @@ const Tech = () => {
   const backendSkills = [
     { icon: <FaPython />, name: "Python", level: "75%" },
     { icon: <SiDjango  />, name: "Django", level: "85%" },
-    // { icon: <SiMysql />, name: "MySQL", level: "80%" },
-    // { icon: <SiMongodb />, name: "MongoDB", level: "90%" },
+    { icon: <FaNodeJs />, name: "Node.js", level: "80%" },
+    { icon: <SiExpress/>, name: "Express.js", level: "85%" },
+    { icon: <SiMongodb/>, name: "MongoDB", level: "85%" },
+
   ];
 
   return (

@@ -7,6 +7,7 @@ import react from '../../../Assets/react.png'
 import guess from '../../../Assets/guess.png'
 import fullstack from '../../../Assets/fullstack.png'
 import { easeOut, motion } from "framer-motion";
+import mern from '../../../Assets/mern.png'
 
 
 
@@ -63,6 +64,15 @@ const Projects = () => {
       github:"https://github.com/gokul-vscode/reactapp_gokul",
       demo: "https://guess-the-number-1to100.netlify.app/",
     },
+    {
+      id: 7,
+      title: "E-Commerce - MERN stack",
+      category: "Fullstack",
+      image: mern,
+      github:"https://github.com/gokul-vscode/mern-backend",
+      demo: "https://shoemart-mern.netlify.app/",
+    },
+
   ];
 
   // const categories = ["All", "React", "JavaScript", "Fullstack"];

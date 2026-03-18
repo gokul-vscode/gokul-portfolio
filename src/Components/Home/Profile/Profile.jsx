@@ -1,10 +1,13 @@
 import React from 'react'
 import '../Profile/Profile.css'
 import { FaHtml5,FaCss3Alt,FaJs,FaReact,FaGithub,FaDownload  } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiMongodb } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
-import Profile1 from '../../../Assets/my3.jpg'
+import { SiExpress } from "react-icons/si";
 import { easeOut, motion } from "framer-motion";
 import cv from '../../../Assets/Gokulram-CV.pdf'
+import gokul from '../../../Assets/gokul1.jpeg'
 
 
 // import prbg from '../Assets/prbg.jpg'
@@ -32,6 +35,9 @@ const Profile = () => {
         <p className='icons'><FaReact /><span  className='icon-nm'>React</span></p>
         <p className='icons'><FaGithub /><span  className='icon-nm'>GitHub</span></p>
         <p className='icons'><SiDjango /><span  className='icon-nm'>Django</span></p>
+        <p className='icons'><FaNodeJs /><span  className='icon-nm'>Node.js</span></p>
+        <p className='icons'><SiExpress/><span  className='icon-nm'>Express.js</span></p>
+        <p className='icons'><SiMongodb /><span  className='icon-nm'>MongoDB</span></p>
     </h1>
      <a href={cv} download="Gokul-Resume" className="download-btn">
       Download CV <span className='dw-icon'>  <FaDownload /></span>
@@ -39,7 +45,7 @@ const Profile = () => {
   </motion.div>
 
   <div class="right-box">
-    <motion.img src={Profile1} alt="" className='profile-pic'  initial={{ x: 150, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}  transition={{ duration: 1, ease: "easeOut" }} viewport={{ once: true }} />
+    <motion.img src={gokul} alt="" className='profile-pic'  initial={{ x: 150, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}  transition={{ duration: 1, ease: "easeOut" }} viewport={{ once: true }} />
   </div>
 </motion.div>
 </>
